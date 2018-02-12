@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  background-color: #fff;
+}
+ 
+ ul {
+  list-style-type: none;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+.jumbotron{
+ background-color: #007bff;
+}
+
+#text {
+  color:#fff;
+}

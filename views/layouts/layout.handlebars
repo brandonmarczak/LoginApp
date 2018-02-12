@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                     <h3>Login System</h3>
+                </div>
+                <div class="col-4 text-center">
+                 </div>
+      <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <ul>
+                        {{#if user}}
+                        <li role="presentation"><a href="/">Dashboard</a></li>
+                        <li role="presentation"><a href="/users/logout">Logout</a></li>
+                        {{else}}
+                        <li role="presentation"><a href="/users/login">Login</a></li>
+                        <li role="presentation"><a href="/users/register">Register</a></li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+        </header>
+                <div class="jumbotron p-3 p-md-5 text-white rounded text-center">
+                    <div class="col-lg-12">
+                      {{{body}}}
+                    </div>
+
+                </div>
+                <footer class="footer">
+                </footer>
+        </div>
+</body>
+
+</html>
